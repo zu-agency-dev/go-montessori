@@ -1,7 +1,6 @@
 {
   "name": "@zu-agency-dev/go-montessori",
   "version": "1.0.0",
-
   "description": "Based on developer starter template for Finsweet projects.",
   "homepage": "https://github.com/zu-agency-dev/go-montessori#readme",
   "license": "ISC",
@@ -60,6 +59,7 @@
     "pnpm": ">=10"
   },
   "publishConfig": {
+    "access": "public",
     "provenance": true
   }
 }
