@@ -28,8 +28,6 @@ jobs:
         with:
           node-version: 24
           cache: pnpm
-          registry-url: 'https://registry.npmjs.org'
-          scope: '@zu-agency-dev'
 
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
