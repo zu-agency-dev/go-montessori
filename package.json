@@ -1,5 +1,5 @@
 {
-  "name": "go-montessori",
+  "name": "@zu-agency-dev/go-montessori",
   "version": "1.0.0",
   "packageManager": "pnpm@10.28.2",
   "description": "Based on developer starter template for Finsweet projects.",
