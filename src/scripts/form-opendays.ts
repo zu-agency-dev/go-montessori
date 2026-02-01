@@ -68,4 +68,7 @@ function formOpenDays() {
   updateHiddenInputs();
 }
 
-export default formOpenDays;
+window.Webflow ||= [];
+window.Webflow.push(() => {
+  formOpenDays();
+});

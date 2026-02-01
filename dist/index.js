@@ -1,1 +1,6 @@
-"use strict";(()=>{var s={NAME:"[data-form-name]",DESCRIPTION:"[data-form-description]",VENUE:"[data-form-venue]",START_DATE:"[data-form-startdate]",END_DATE:"[data-form-enddate]",SLUG:"[data-form-slug]"},i="[data-form-select]",E="[data-form-hidden]",f="[form-hidden-venue]",n=document.querySelector(i),p=document.querySelectorAll(s.NAME),S=document.querySelectorAll(s.SLUG),T=document.querySelectorAll(s.VENUE),a=document.querySelector(E),u=document.querySelector(f),I=e=>{switch(e.trim()){case"Go Montessori \u2013 Przedszkole Babice":return"gomontressori-babice";case"Go Montessori \u2013 Przedszkole S\u0142omin":return"gomontressori-slomin";case"Go Montessori \u2013 \u017B\u0142obek S\u0142omin":return"gomontressori-zlobek-slomin";default:return""}},c=()=>{let e=n.options[n.selectedIndex];if(e&&(a&&(a.value=e.dataset.slug||""),u)){let o=e.dataset.venue||"";u.value=I(o)}};function g(){n&&(p.forEach((e,o)=>{let t=document.createElement("option"),r=e.textContent||"",l=S[o]?.textContent||"",m=T[o]?.textContent||"";t.value=r,t.text=r,t.dataset.slug=l,t.dataset.venue=m,n.appendChild(t)}),n.addEventListener("change",c),c())}var d=g;window.Webflow||(window.Webflow=[]);window.Webflow.push(()=>{d()});})();
+"use strict";
+(() => {
+  // bin/live-reload.js
+  new EventSource(`${"http://localhost:3000"}/esbuild`).addEventListener("change", () => location.reload());
+})();
+//# sourceMappingURL=index.js.map
