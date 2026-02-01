@@ -9,5 +9,9 @@ on:
 jobs:
   release:
     uses: finsweet/workflow-release/.github/workflows/release.yml@main
+    permissions:
+      id-token: write
+      contents: write
+      pull-requests: write
     secrets:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
